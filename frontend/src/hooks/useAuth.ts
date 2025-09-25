@@ -22,7 +22,7 @@ export const useAuth = () => {
   const logout = () => {
     localStorage.removeItem("Bearer");
     setToken(null);
-    router.push("/auth");
+    router.push("/");
   };
 
   return { token, loading, login, logout };
